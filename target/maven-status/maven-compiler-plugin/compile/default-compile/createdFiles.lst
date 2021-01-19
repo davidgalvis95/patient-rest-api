@@ -1,0 +1,15 @@
+com/heinsohn/technicaltest/dto/ResponseSuccessDto.class
+com/heinsohn/technicaltest/domain/Patient.class
+com/heinsohn/technicaltest/dto/ResponseFailureDto.class
+com/heinsohn/technicaltest/mapper/PatientMapperImpl.class
+com/heinsohn/technicaltest/persistence/model/Patient.class
+com/heinsohn/technicaltest/dto/ResponseSuccessDto$ResponseSuccessDtoBuilder.class
+com/heinsohn/technicaltest/controllers/PatientController.class
+com/heinsohn/technicaltest/dto/ResponseFailureDto$ResponseFailureDtoBuilder.class
+com/heinsohn/technicaltest/TechnicalTestApplication.class
+com/heinsohn/technicaltest/services/PatientRegistryService.class
+com/heinsohn/technicaltest/mapper/PatientMapper.class
+com/heinsohn/technicaltest/dto/PatientDto.class
+com/heinsohn/technicaltest/persistence/repositories/PatientRepository.class
+com/heinsohn/technicaltest/persistence/model/Patient$PatientBuilder.class
+com/heinsohn/technicaltest/dto/Response.class
