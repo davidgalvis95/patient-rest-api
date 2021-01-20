@@ -13,7 +13,20 @@ If the API docker image(`davidgalvis1995/patients-api-image:3.0`) is not in your
 The API actually holds 3 endpoints which you can visualize in:
 `src/main/java/com/heinsohn/technicaltest/controllers/PatientController.java`
 
-You can also **run the application locally**, while to perform that action correctly is needed to follow the next steps:
+The application can also be run locally by using the following 2 commands:
+
+1. `docker run -d \
+-p 2021:3306 \
+--name mysql-container \
+-e MYSQL_ROOT_PASSWORD=password \
+-e MYSQL_DATABASE=patients_db \
+-e MYSQL_USER=patient_manager \
+-e MYSQL_PASSWORD=password \
+mysql:8`
+   
+2. `docker run -t --name patients-app-container --link mysql-container:mysql -p 8080:8080 davidgalvis1995/patients-api-image:3.0`
+
+Finally, you can also **run the application locally**, while to perform that action correctly is needed to follow the next steps:
 1. Install MySQL in your local machine.
 2. Create a database with the `root` user, password = `password`, and the database name of `patients_db`, if you desire, you can also modify the `application-local.properties` to accommodate those environment variables to your needs.
 3. Configure the local profile in the run configurations of the project through your preferred IDE, e.g. using Intellij idea it should look like this:
@@ -34,5 +47,7 @@ The other endpoints (GET, GET) should be pretty straightforward, but you want to
 ###### Deploying/Running Flowchart
 The following flowchart compiles the above mentioned steps. While it is not continuous deployment, it is some kind of deployment in `docker` to be tested in local machines.
 ![src/main/resources/images/deploying-flowchart.png](src/main/resources/images/deploying-flowchart.png)
+
+It is worth to clarify that the application actually generates a volume for the MySQL db container, that ensures that the data will not be lost, to look at it on detail you can try running `docker volume inspect patient-rest-api_patients-data`.
 
 Thanks! :)

@@ -17,7 +17,7 @@ services:
       - 2021:3306
 
   patients-api-container:
-    image: davidgalvis1995/patients-api-image:2.0
+    image: davidgalvis1995/patients-api-image:3.0
     restart: on-failure
     depends_on:
       - mysql-container
