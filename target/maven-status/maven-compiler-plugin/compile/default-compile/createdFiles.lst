@@ -9,6 +9,7 @@ com/heinsohn/technicaltest/controllers/PatientController.class
 com/heinsohn/technicaltest/dto/ResponseFailureDto$ResponseFailureDtoBuilder.class
 com/heinsohn/technicaltest/TechnicalTestApplication.class
 com/heinsohn/technicaltest/services/PatientRegistryService.class
+com/heinsohn/technicaltest/configuration/SpringFoxConfig.class
 com/heinsohn/technicaltest/mapper/PatientMapper.class
 com/heinsohn/technicaltest/dto/PatientDto.class
 com/heinsohn/technicaltest/persistence/repositories/PatientRepository.class

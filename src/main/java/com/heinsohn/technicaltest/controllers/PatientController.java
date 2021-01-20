@@ -51,7 +51,7 @@ public class PatientController {
 
     }
 
-    @GetMapping()
+    @GetMapping("/patients")
     public ResponseEntity<List<PatientDto>> getAllPatients(){
 
         List<PatientDto> patients = patientService.getPatients();
