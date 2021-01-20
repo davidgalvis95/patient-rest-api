@@ -1,3 +1,4 @@
+com/heinsohn/technicaltest/domain/Patient$PatientBuilder.class
 com/heinsohn/technicaltest/dto/ResponseSuccessDto.class
 com/heinsohn/technicaltest/domain/Patient.class
 com/heinsohn/technicaltest/dto/ResponseFailureDto.class

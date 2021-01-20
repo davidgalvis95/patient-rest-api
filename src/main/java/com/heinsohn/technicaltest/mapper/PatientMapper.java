@@ -10,5 +10,6 @@ public interface PatientMapper {
 
     //TODO investigate why lombok is now working with mapstruct
     Patient patientDtoToPatient(PatientDto patientDto);
+    PatientDto patientToPatientDto(Patient patient);
 
 }

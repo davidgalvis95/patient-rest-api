@@ -11,7 +11,11 @@ import org.springframework.stereotype.Service;
 import com.heinsohn.technicaltest.persistence.repositories.PatientRepository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
+import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 public class PatientRegistryService {
@@ -72,5 +76,31 @@ public class PatientRegistryService {
                 .build();
 
         return modelPatient;
+    }
+
+    private Patient fromPatientModelToDomainTranslator(com.heinsohn.technicaltest.persistence.model.Patient modelPatient) {
+
+        Patient patient = Patient.builder()
+                .id(modelPatient.getId())
+                .patientId(modelPatient.getPatientId())
+                .firstName(modelPatient.getFirstName())
+                .lastName(modelPatient.getLastName())
+                .email(modelPatient.getEmail())
+                .phone(modelPatient.getPhone())
+                .build();
+
+        return patient;
+    }
+
+    public List<PatientDto> getPatients() {
+        return patientRepository.findAll().stream().map(patient ->
+                mapper.patientToPatientDto(fromPatientModelToDomainTranslator(patient))).collect(Collectors.toList());
+    }
+
+    @Transactional
+    public PatientDto getPatientsById(String id) {
+        return Optional.ofNullable(patientRepository.findById(UUID.fromString(id)).get())
+                .map(patient -> mapper.patientToPatientDto(fromPatientModelToDomainTranslator(patient)))
+                .orElse(null);
     }
 }

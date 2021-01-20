@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+
+  mysql-container:
+    container_name: mysql-container
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=patients_db
+      - MYSQL_USER=patient_manager
+      - MYSQL_PASSWORD=password
+    volumes:
+      - patients-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  myapp-main:
+    image: myapp-image-name-that-appears-when-you-run-docker-images
+    restart: on-failure
+    depends_on:
+      - mysql-container
+    ports:
+      - 8080:8080
+    environment:
+      - DATABASE_HOST=mysql-container
+      - DATABASE_USER=patient_manager
+      - DATABASE_PASSWORD=password
+      - DATABASE_NAME=patients_db
+      - DATABASE_PORT=3306
+
+volumes:
+  patients-data:

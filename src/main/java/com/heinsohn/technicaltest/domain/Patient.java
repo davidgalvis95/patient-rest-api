@@ -1,7 +1,10 @@
 package com.heinsohn.technicaltest.domain;
 
+import lombok.Builder;
+
 import java.util.UUID;
 
+@Builder
 public class Patient {
 
     UUID id;

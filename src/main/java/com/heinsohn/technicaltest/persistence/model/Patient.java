@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.UUID;
@@ -18,25 +19,27 @@ import java.util.UUID;
 public class Patient {
 
     @Id
-    @GeneratedValue( generator = "UUID" )
-    @GenericGenerator( name = "UUID",
-            strategy = "org.hibernate.id.UUIDGenerator" )
+    @GeneratedValue( generator = "uuid2" )
+    @GenericGenerator( name = "uuid2",
+            strategy = "uuid2" )
     @Column( name = "id",
-            nullable = false )
-    UUID Id;
+            nullable = false,
+            updatable = false)
+    @Type(type="uuid-char")
+    private UUID Id;
 
     @Column( name = "patient_id")
-    String patientId;
+    private String patientId;
 
     @Column( name = "first_name")
-    String firstName;
+    private String firstName;
 
     @Column( name = "last_name")
-    String lastName;
+    private String lastName;
 
     @Column( name = "email")
-    String email;
+    private String email;
 
     @Column( name = "phone")
-    String phone;
+    private String phone;
 }
