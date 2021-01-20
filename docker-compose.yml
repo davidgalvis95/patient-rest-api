@@ -10,13 +10,14 @@ services:
       - MYSQL_DATABASE=patients_db
       - MYSQL_USER=patient_manager
       - MYSQL_PASSWORD=password
+#   This volume will be used to store safely the patients data
     volumes:
       - patients-data:/var/lib/mysql
     ports:
-      - 3306:3306
+      - 2021:3306
 
-  myapp-main:
-    image: myapp-image-name-that-appears-when-you-run-docker-images
+  patients-api-container:
+    image: davidgalvis1995/patients-api-image:2.0
     restart: on-failure
     depends_on:
       - mysql-container

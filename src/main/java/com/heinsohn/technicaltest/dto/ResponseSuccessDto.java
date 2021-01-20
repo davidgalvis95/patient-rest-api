@@ -7,8 +7,8 @@ import lombok.Builder;
 public class ResponseSuccessDto implements Response{
 
     @JsonProperty("message")
-    String message;
+    private String message;
 
     @JsonProperty("patientDto")
-    PatientDto patientDto;
+    private PatientDto patientDto;
 }

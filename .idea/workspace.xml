@@ -5,27 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b33a04d-fee0-47f4-8d0d-9aa0980d59d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/controllers/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/controllers/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/domain/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/domain/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/mapper/PatientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/mapper/PatientMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/persistence/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/persistence/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/dto/PatientDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/dto/PatientDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/dto/ResponseFailureDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/dto/ResponseFailureDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/dto/ResponseSuccessDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/dto/ResponseSuccessDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/controllers/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/controllers/PatientController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/domain/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/domain/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/mapper/PatientMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/mapper/PatientMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/mapper/PatientMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/mapper/PatientMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/persistence/model/Patient$PatientBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/persistence/model/Patient$PatientBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/persistence/model/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/persistence/model/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/dto/PatientDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/dto/PatientDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/dto/ResponseFailureDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/dto/ResponseFailureDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/dto/ResponseSuccessDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/dto/ResponseSuccessDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/services/PatientRegistryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/heinsohn/technicaltest/services/PatientRegistryService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/heinsohn/technicaltest/mapper/PatientMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/heinsohn/technicaltest/mapper/PatientMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/technical-test-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/technical-test-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/technical-test-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/technical-test-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
@@ -108,6 +100,7 @@
     <configuration name="TechnicalTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="patient-rest-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.heinsohn.technicaltest.TechnicalTestApplication" />
+      <option name="ACTIVE_PROFILES" value="local" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,7 +130,7 @@
       <workItem from="1611032481120" duration="2409000" />
       <workItem from="1611034975562" duration="14000" />
       <workItem from="1611035009505" duration="8320000" />
-      <workItem from="1611094759636" duration="8134000" />
+      <workItem from="1611094759636" duration="12414000" />
     </task>
     <servers />
   </component>
@@ -166,22 +159,22 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java</url>
-          <line>38</line>
+          <line>37</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java</url>
-          <line>59</line>
+          <line>58</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java</url>
-          <line>48</line>
+          <line>47</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -191,12 +184,12 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java</url>
-          <line>49</line>
+          <line>48</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/heinsohn/technicaltest/services/PatientRegistryService.java</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

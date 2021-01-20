@@ -7,5 +7,5 @@ import lombok.Builder;
 public class ResponseFailureDto implements Response{
 
     @JsonProperty("message")
-    String message;
+    private String message;
 }

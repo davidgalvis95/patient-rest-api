@@ -6,17 +6,16 @@ import com.heinsohn.technicaltest.dto.Response;
 import com.heinsohn.technicaltest.dto.ResponseFailureDto;
 import com.heinsohn.technicaltest.dto.ResponseSuccessDto;
 import com.heinsohn.technicaltest.mapper.PatientMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.heinsohn.technicaltest.persistence.repositories.PatientRepository;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 public class PatientRegistryService {
 
@@ -38,19 +37,19 @@ public class PatientRegistryService {
 
         if (Objects.nonNull(patientDto.getId())) {
 
-            return  ResponseFailureDto.builder()
+            return ResponseFailureDto.builder()
                     .message(FAILURE_MESSAGE)
                     .build();
 
         }
 
-        try{
+        try {
 
             Patient patientDomain = mapper.patientDtoToPatient(patientDto);
             com.heinsohn.technicaltest.persistence.model.Patient patientModel = this.fromPatientDomainToModelTranslator(patientDomain);
             savedPatient = patientRepository.saveAndFlush(patientModel);
 
-        }catch (Exception e){
+        } catch (Exception e) {
 
             return ResponseFailureDto.builder()
                     .message(FAILURE_MESSAGE)
@@ -99,7 +98,7 @@ public class PatientRegistryService {
 
     @Transactional
     public PatientDto getPatientsById(String id) {
-        return Optional.ofNullable(patientRepository.findById(UUID.fromString(id)).get())
+        return patientRepository.findById(UUID.fromString(id))
                 .map(patient -> mapper.patientToPatientDto(fromPatientModelToDomainTranslator(patient)))
                 .orElse(null);
     }

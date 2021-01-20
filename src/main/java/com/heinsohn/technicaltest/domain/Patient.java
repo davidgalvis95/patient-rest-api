@@ -7,17 +7,17 @@ import java.util.UUID;
 @Builder
 public class Patient {
 
-    UUID id;
+    private UUID id;
 
-    String patientId;
+    private String patientId;
 
-    String firstName;
+    private String firstName;
 
-    String lastName;
+    private String lastName;
 
-    String email;
+    private String email;
 
-    String phone;
+    private String phone;
 
     public Patient(UUID id, String patientId, String firstName, String lastName, String email, String phone) {
         this.id = id;

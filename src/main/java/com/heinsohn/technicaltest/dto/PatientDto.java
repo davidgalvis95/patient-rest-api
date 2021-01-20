@@ -2,31 +2,32 @@ package com.heinsohn.technicaltest.dto;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.UUID;
 
 
 public class PatientDto {
 
-    UUID id;
+    private UUID id;
 
     @NotNull(message = "cannot be null")
     @Size(min = 0,max = 20, message = "must be shorter than 20 characters")
-//    @Pattern(regexp = "\\d+", message = "only numbers are accepted")
-    String patientId;
+    @Pattern(regexp = "\\d+", message = "only numbers are accepted")
+    private String patientId;
 
     @Size(min = 0,max = 255, message = "must be shorter than 255 characters")
-    String firstName;
+    private String firstName;
 
     @Size(min = 0,max = 255, message = "must be shorter than 255 characters")
-    String lastName;
+    private String lastName;
 
     @Email(message = "email must be a valid email")
     @Size(min = 0,max = 255, message = "must be shorter than 255 characters")
-    String email;
+    private String email;
 
     @Size(min = 0,max = 20, message = "must be shorter than 20 characters")
-    String phone;
+    private String phone;
 
     public PatientDto(UUID id, @NotNull(message = "cannot be null") @Size(min = 0, max = 20, message = "must be shorter than 20 characters") String patientId, @Size(min = 0, max = 255, message = "must be shorter than 255 characters") String firstName, @Size(min = 0, max = 255, message = "must be shorter than 255 characters") String lastName, @Email(message = "email must be a valid email") @Size(min = 0, max = 255, message = "must be shorter than 255 characters") String email, @Size(min = 0, max = 20, message = "must be shorter than 20 characters") String phone) {
         this.id = id;
